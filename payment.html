@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CharmAura - Payment</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #fafafa;
+      }
+      header {
+        background: #111;
+        color: white;
+        padding: 18px 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+      nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        color: #ffd700;
+      }
+
+      .payment {
+        padding: 50px;
+        text-align: center;
+      }
+      form {
+        max-width: 400px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        margin-top: 16px;
+        width: 100%;
+        padding: 12px;
+        background: #ffd700;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      footer {
+        background: #222;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2>CharmAura</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+      </nav>
+    </header>
+
+    <section class="payment">
+      <h2>Complete Your Purchase</h2>
+
+      <form action="thankyou.html">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="City" required />
+        <input type="number" placeholder="Phone Number" required />
+        <input type="text" placeholder="Card Number" required />
+        <input type="text" placeholder="Expiry Date (MM/YY)" required />
+        <input type="text" placeholder="CVV" required />
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </section>
+
+    <footer>© 2025 CharmAura. All Rights Reserved.</footer>
+  </body>
+</html>
